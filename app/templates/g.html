@@ -12,9 +12,40 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+		
+		<style>
+			body{
+       height: 100%;
+       padding:0px;
+       background-color : #87CEEB;
+    	}
+			
+      .box {
+        width: 30%;
+        height: 100%;
+        margin: 10px;
+        background-color: #C71585;
+      }
+			
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 1000px;
+				align-items: center;
+      }
+    </style>
+		
 	</head>
 	<body>
-		<!-- Your layout here -->
+		<div class = "flex-container">
+			<div class="box"> </div>
+			
+      <div class="box"> </div>
+			
+      <div class="box"> </div>
+		</div>
+
 
 	</body>
 </html>
